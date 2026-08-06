@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Growing Public Health Crisis - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Article-specific styles */
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--darker-blue);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-content ul,
+    .article-content ol {
+      margin: 25px 0;
+      padding-left: 30px;
+    }
+    
+    .article-content li {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+    
+    .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link">🏠 Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link">🧒 Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link">🎗️ Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link">🏛️ Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link">🤖 AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link">🧠 Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link">📚 Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link">👥 Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link">💡 Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/pediatrics.html" class="back-button">← Back to Pediatrics</a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag pediatrics">Pediatrics</span>
+        <span>📅 July 2026</span>
+        <span>✍️ By Madison Trinh </span>
+      </div>
+
+      <!-- Article content/html -->
+      <h1>The Growing Public Health Crisis of Teen Vaping</h1>
+
+            <p>More than 2.1 million middle and high school students in the United States reported using e-cigarettes in 2023, making vaping one of the fastest-growing health concerns among young people. Many teenagers begin using e-cigarettes because they believe they are safer than traditional cigarettes or because flavored products seem harmless. However, scientific research shows that vaping can quickly lead to nicotine addiction while exposing users to harmful chemicals that affect the body and brain. During adolescence, the brain is still developing important areas responsible for memory, decision-making, learning, and self-control, making teens especially vulnerable to nicotine’s effects. Studies also show that more teens are vaping regularly and finding it difficult to quit (Abrams, 2025). As vaping becomes more common among young people, it is clear that this trend is creating serious health risks. Teen vaping is a growing public health crisis because it leads to nicotine addiction, harms brain development, increases the risk of long-term health problems, and requires stronger prevention efforts.</p>
+
+        <h2>Nicotine Addiction</h2>
+
+            <p>One of the biggest concerns about teen vaping is how quickly it can lead to nicotine addiction. Many teens begin vaping out of curiosity or because of peer pressure, but they often continue using e-cigarettes because nicotine is highly addictive. Nicotine stimulates the brain to release dopamine, a chemical that creates feelings of pleasure and reward. Over time, the brain begins to rely on nicotine to produce these feelings, making it difficult to stop using e-cigarettes without experiencing cravings and withdrawal symptoms. Because teenagers’ brains are still developing, they become addicted more easily than adults. According to a study from the USC Keck School of Medicine, daily e-cigarette use among youth has increased, and many teenagers report difficulty quitting (Abrams, 2025). This shows that vaping is not simply an occasional habit or experiment. Instead, regular use creates nicotine dependence that can last for years.</p>
+
+        <h2>Health Effects</h2>
+
+            <p>In addition to causing addiction, vaping exposes teens to chemicals that can damage their bodies and brains. The aerosol produced by e-cigarettes contains nicotine as well as harmful substances such as formaldehyde, acrolein, heavy metals like lead and nickel, and ultrafine particles that can travel deep into the lungs. These chemicals may irritate lung tissue, increase inflammation, and damage cells throughout the respiratory system. The Centers for Disease Control and Prevention (CDC, 2024) explains that e-cigarettes contain nicotine along with other harmful chemicals that can negatively affect young users. The CDC also notes that flavored vaping products make e-cigarettes especially attractive to teenagers, increasing the likelihood of continued use. Furthermore, research published in <em>Missouri Medicine</em> explains that nicotine interferes with adolescent brain development by affecting memory, learning, attention, and impulse control (Jones & Salzman, 2020). Since the brain continues developing into a person's twenties, nicotine exposure during adolescence can have long-lasting effects. These findings show that vaping is not a harmless alternative to smoking but a serious threat to teen health.</p>
+
+        <h2>Long-Term Medical Concerns</h2>
+
+            <p>As vaping becomes more common, doctors continue to report increasing health concerns among teenagers. Medical experts warn that vaping can contribute to lung damage, respiratory illness, and long-term nicotine dependence. The chemicals inhaled through vaping can cause inflammation in the airways and damage the tiny air sacs in the lungs where oxygen enters the bloodstream. Some researchers have also linked vaping to a higher risk of chronic breathing problems and a serious condition known as EVALI, or e-cigarette or vaping product use-associated lung injury. According to <em>Pulmonology Advisor</em>, rising vaping rates among teens have been accompanied by growing concerns about lung injuries and addiction (May, 2023). Some teens experience persistent coughing, shortness of breath, and other breathing problems after using e-cigarettes regularly. Although researchers continue studying the long-term effects of vaping, current evidence already shows that the risks are significant. These medical concerns demonstrate why vaping should not be viewed as a safe activity for adolescents.</p>
+
+        <h2>Prevention and Awareness</h2>
+
+            <p>Because vaping poses serious health risks, stronger prevention and education efforts are needed. Many teenagers begin vaping without fully understanding the dangers of nicotine addiction or the harmful chemicals found in e-cigarettes. Schools can help by providing evidence-based health education programs that explain how nicotine affects the developing brain and why vaping is addictive. Government agencies such as the FDA have also increased restrictions on flavored e-cigarette products and enforce the federal minimum purchasing age of 21 to reduce youth access. Healthcare providers and school counselors can support teens who are trying to quit by offering counseling, nicotine cessation programs, and other resources. Families also play an important role by talking openly with teenagers about the risks of vaping and recognizing warning signs of nicotine addiction. Prevention programs can reduce misconceptions that vaping is harmless simply because it differs from traditional smoking. Increasing awareness through education, policy, and community support is an important step toward reducing youth vaping rates.</p>
+
+        <h2>Conclusion</h2>
+
+            <p>Overall, teen vaping has become a major public health issue because it causes nicotine addiction, harms adolescent brain development, and increases the risk of serious long-term health problems. Research consistently shows that more teenagers are vaping every day and that many struggle to quit once they become addicted (Abrams, 2025). The harmful chemicals found in e-cigarettes can affect both physical health and brain development during a critical stage of life. Although some people believe vaping is safer than smoking, scientific evidence demonstrates that it still poses significant risks for adolescents. By increasing education, strengthening prevention efforts, and helping teens understand the dangers of vaping, communities can reduce youth vaping and protect the health of future generations.</p>
+
+        <h2>References</h2>
+
+            <p>Abrams, Z. (2025, November 3). <em>Among youth who vape, USC study finds rise in daily use and difficulty quitting</em>. USC Keck School of Medicine. <a href="https://keck.usc.edu/news/among-youth-who-vape-usc-study-finds-rise-in-daily-use-and-difficulty-quitting/" target="_blank">https://keck.usc.edu/news/among-youth-who-vape-usc-study-finds-rise-in-daily-use-and-difficulty-quitting/</a></p>
+
+            <p>Centers for Disease Control and Prevention. (2024, October 17). <em>E-cigarette use among youth</em>. <a href="https://www.cdc.gov/tobacco/e-cigarettes/youth.html" target="_blank">https://www.cdc.gov/tobacco/e-cigarettes/youth.html</a></p>
+
+            <p>Jones, K., &amp; Salzman, G. A. (2020). <em>The vaping epidemic in adolescents</em>. <em>Missouri Medicine, 117</em>(1), 56–58. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7023954/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC7023954/</a></p>
+
+            <p>May, B. (2023, August 4). <em>As vaping among teens, young adults rapidly increases, so do health concerns</em>. <em>Pulmonology Advisor</em>. <a href="https://www.pulmonologyadvisor.com/features/as-vaping-among-teens-young-adults-increases-so-do-health-concerns/" target="_blank">https://www.pulmonologyadvisor.com/features/as-vaping-among-teens-young-adults-increases-so-do-health-concerns/</a></p>
+   
+      <!-- Optional: Author Bio -->
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Madison Trinh writes to share the vast world of scientific discovery with readers while continuously deepening her own understanding. She specializes in exploring the intersections of neuroscience, pediatrics, and AI in healthcare. </p>
+    </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

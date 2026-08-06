@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Project Mars Research Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sidebar Navigation (same as index.html) -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="index.html" class="sidebar-link">🏠 Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link">🧒 Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link">🎗️ Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link">🏛️ Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link">🤖 AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link">🧠 Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link">📚 Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link">👥 Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link">💡 Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+  
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>About the Research Blog</h1>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="container">
+    <section class="about-content">
+      <h2>Our Mission</h2>
+      <p>Project Mars is dedicated to making scientific research accessible to students. Our blog provides high-quality, student-friendly content across multiple scientific disciplines, from pediatrics to artificial intelligence in medicine.</p>
+      
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <h3>Sarah Verma</h3>
+          <p class="team-role">Founder</p>
+          <p>Sarah founded Project Mars with the vision of creating a platform where students can access high-quality, accessible research content and develop their scientific communication skills.</p>
+        </div>
+        
+        <div class="team-member">
+          <h3>Anushka Pandey</h3>
+          <p class="team-role">Director of Content</p>
+          <p>Anushka leads the blog's content strategy, oversees article development, and manages our team of student writers. She ensures all content meets our standards for accuracy and accessibility.</p>
+        </div>
+      </div>
+      
+      <h2>What We Offer</h2>
+      <ul class="feature-list">
+        <li>📚 <strong>Research Skills 101</strong> - Practical guides on how to do research</li>
+        <li>🔬 <strong>Topic Categories</strong> - In-depth articles organized by scientific field</li>
+        <li>👥 <strong>Spotlights</strong> - Interviews with researchers, mentors, and student ambassadors</li>
+        <li>💡 <strong>Breakthroughs</strong> - Accessible explainers of major research advances</li>
+      </ul>
+      
+      <h2>Get Involved</h2>
+      <p>Interested in writing for us or collaborating? We're always looking for passionate student writers and researchers!</p>
+      <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="secondary-button">Apply to be a Writer →</a>
+    </section>
+  </main>
+
+  <!-- Footer (same as index.html) -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

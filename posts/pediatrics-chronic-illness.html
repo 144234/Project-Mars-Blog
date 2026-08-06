@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Effect of Chronic Illness on Children - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Article-specific styles */
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--darker-blue);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-content ul,
+    .article-content ol {
+      margin: 25px 0;
+      padding-left: 30px;
+    }
+    
+    .article-content li {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+    
+    .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/pediatrics.html" class="back-button">← Back to Pediatrics</a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag pediatrics">Pediatrics</span>
+        <span>📅 June 2026</span>
+        <span>✍️ By Madison Trinh</span>
+      </div>
+
+      <h1>The Effect of Chronic Illness on Children</h1>
+
+        <p>Nearly 1 in 5 children in the United States lives with a chronic illness, yet many people underestimate how deeply these conditions affect teenagers’ everyday lives. Chronic illnesses are long-lasting conditions that require continuous management rather than a single treatment. In adolescents, these conditions include asthma, diabetes, or autoimmune diseases. This stage of life is very sensitive because children and teenagers are developing their identity and independence. Research shows that adolescents face significant health and mental obstacles. 7.1% of U.S. teens miss 11 or more days of school due to illness or injury (Centers for Disease Control and Prevention [CDC], 2024). Chronic illness can intensify these difficulties, affecting teens emotionally, socially, academically, and physically.</p>
+
+    <h2>Emotional Impact</h2>
+
+        <p>Living with a chronic illness can considerably impact an adolescent’s mental health. Many teenagers today experience depression, anxiety, or emotional frustration due to symptoms and treatment demands. Globally, about 14% experience a mental health disorder, and those with chronic illness are at even higher risk (World Health Organization [WHO], 2025). In the United States, 29% of high school students report poor mental health, showing how common emotional struggles already are (CDC, 2024). Chronic illness increases stress, especially because the symptoms of the disorder can be unpredictable. For example, a teen who frequently attends medical appointments or experiences sudden flare-ups may feel overwhelmed and unable to control their life. Unlike adults, adolescents are still developing their identity and independence. Constant medical treatments or physical limitations may make teens feel different from their peers, causing embarrassment or frustration. Over time, these feelings can lead to isolation and difficulty building self-confidence.</p>
+
+    <h2>Social Life</h2>
+
+        <p>Chronic illness can also disrupt a teen’s social life and friendships. Adolescents may miss social events due to fatigue, pain, or medical responsibilities, making it harder to maintain connections with peers. According to health experts, mental health challenges can interfere with relationships and daily functioning, including friendships (Office of Population Affairs [OPA], 2023). Teens with chronic illnesses may feel isolated or “different,” especially when others do not fully understand their condition. This can lead to misunderstandings or exclusion. Since adolescence is a critical time for building social identity and belonging, these experiences can have lasting emotional effects.</p>
+
+    <h2>Academic Challenges</h2>
+
+        <p>Academic performance is almost always affected by chronic illnesses. Symptoms such as fatigue, pain, or medication side effects can make it difficult to focus in class or complete assignments. Additionally, missed school days due to illness or medical appointments can cause students to fall behind. Data shows that 7.1% of adolescents miss significant amounts of school due to health-related issues, highlighting how common this challenge is (CDC, 2024). Trying to balance schoolwork with ongoing health needs can create stress and pressure. As a result, teens may struggle academically, which can impact their confidence and future educational goals.</p>
+
+    <h2>Family Dynamics</h2>
+
+        <p>Chronic illness can also affect family relationships and a teen’s sense of independence. Adolescents naturally seek more autonomy, but managing a chronic condition often requires continued parental involvement. This can create tension, as teens may want independence while parents feel the need to monitor their health closely. Families may also need to adjust routines, responsibilities, and expectations. Despite these challenges, family support plays a key role in helping adolescents manage their illness. Strong support systems can improve coping skills and emotional resilience.</p>
+
+    <h2>Conclusion</h2>
+
+        <p>Overall, chronic illness affects adolescents in many aspects of life, including emotional health, social relationships, academic success, and family dynamics. These challenges are significant, especially considering that nearly half of adolescents experience a mental health disorder at some point in their lives (OPA, 2023). Teenagers with chronic illnesses are often expected to balance school, friendships, family expectations, and serious health challenges all at once. Greater understanding from schools, peers, and communities can make a significant difference in their lives. By creating supportive environments and reducing stigma, society can help adolescents with chronic illnesses feel seen, included, and capable of succeeding despite their challenges.</p>
+
+    <h2>References</h2>
+        <p>Centers for Disease Control and Prevention. (2024). <em>Adolescent health fast stats</em>. <a href="https://www.cdc.gov/nchs/fastats/adolescent-health.htm" target="_blank">https://www.cdc.gov/nchs/fastats/adolescent-health.htm</a></p>
+
+        <p>Centers for Disease Control and Prevention. (2024). <em>Mental health indicators</em>. <a href="https://www.cdc.gov/cdi/indicator-definitions/mental-health.html" target="_blank">https://www.cdc.gov/cdi/indicator-definitions/mental-health.html</a></p>
+
+        <p>Centers for Disease Control and Prevention. (2023). <em>Children’s mental health data and statistics</em>. <a href="https://www.cdc.gov/children-mental-health/data-research/index.html" target="_blank">https://www.cdc.gov/children-mental-health/data-research/index.html</a></p>
+
+        <p>Office of Population Affairs. (2023). <em>Mental health for adolescents</em>. <a href="https://opa.hhs.gov/adolescent-health/mental-health-adolescents" target="_blank">https://opa.hhs.gov/adolescent-health/mental-health-adolescents</a></p>
+
+        <p>World Health Organization. (2025). <em>Adolescent mental health</em>. <a href="https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health" target="_blank">https://www.who.int/news-room/fact-sheets/detail/adolescent-mental-health</a></p>
+
+      <!-- Optional: Author Bio -->
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Madison Trinh writes to share the vast world of scientific discovery with readers while continuously deepening her own understanding. She specializes in exploring the intersections of neuroscience, pediatrics, and AI in healthcare. </p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

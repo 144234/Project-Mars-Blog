@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Skills 101 - Project Mars Research Blog</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    :root {
+      --category-accent: #7a9ba8;
+      --category-accent-light: #9bb5d7;
+      --category-accent-dark: #5a7d8d;
+    }
+    
+    .category-header.skills {
+      background: linear-gradient(135deg, #9ea99f 0%, #9ea99f 100%);
+    }
+    
+    .category-tag.skills {
+      background: #9ea99f;
+      color: white;
+    }
+    
+    .post-item {
+      border-left: 5px solid #9ea99f;
+    }
+    
+    .read-more {
+      color: #9ea99f;
+    }
+    
+    .series-intro {
+      background: #f5f9fb;
+      border-left: 5px solid #9ea99f; /* Thick accent bar on the left using your theme blue */
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
+      padding: 20px 24px; /* Gives the text room to breathe */
+      margin-top: 24px; /* Pulls it down away from the header */
+      margin-bottom: 32px; /* Pushes the articles down slightly */
+      border-radius: 0 8px 8px 0; /* Smooth rounded corners on the right side */
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Subtle drop shadow for depth */
+    }
+
+    .series-intro p {
+      color: #4a5568; 
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
+        <a href="neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="../about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="../index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="../index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="../about.html">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Category Header -->
+  <header class="category-header skills">
+    <div class="container">
+      <h1> Research Skills 101</h1>
+      <p class="category-description">Teaching the mechanics of doing research - the "how," not the "what"</p>
+    </div>
+  </header>
+
+  <!-- Posts List -->
+  <main class="container">
+    <!-- Series Introduction -->
+    <div class="series-intro">
+      <p>This series provides practical, step-by-step guides on how to do research. Whether you're writing your first review paper or learning to read scientific literature, these articles will give you the foundational skills you need to succeed.</p>
+    </div>
+    
+    <div class="posts-list">
+      <article class="post-item">
+        <div class="post-meta">
+          <span class="category-tag skills">Research Skills</span>
+          <span class="post-date">August 2026</span>
+        </div>
+        <h2><a href="../posts/skills-review-paper.html">6 Steps to a Successful Review Paper</a></h2>
+        <p>A comprehensive, step-by-step guide to writing review articles that synthesize existing research effectively.</p>
+        <a href="../posts/skills-review-paper.html" class="read-more">Read Full Article →</a>
+      </article>
+      
+      <article class="post-item">
+        <div class="post-meta">
+          <span class="category-tag skills">Research Skills</span>
+          <span class="post-date">July 2026</span>
+        </div>
+        <h2><a href="../posts/skills-choose-project.html">How to Choose a Research Project That You Are Passionate About</a></h2>
+        <p>Finding research that aligns with your interests, goals, and available resources.</p>
+        <a href="../posts/skills-choose-project.html" class="read-more">Read Full Article →</a>
+      </article>
+      
+      <!-- Future posts will go here -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

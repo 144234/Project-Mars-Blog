@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Why Diverse Representation is Essential for Objective Medical Research - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Article-specific styles */
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--darker-blue);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-content ul,
+    .article-content ol {
+      margin: 25px 0;
+      padding-left: 30px;
+    }
+    
+    .article-content li {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+    
+    .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link">AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/policy.html" class="back-button">← Back to Public Policy</a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag policy">Public Policy</span>
+        <span>📅 July 2026</span>
+        <span>✍️ By Hameedah Salam</span>
+      </div>
+
+      <!-- Article content/html -->
+      <h1>Why Diverse Representation is Essential for Objective Medical Research</h1>
+
+        <p><strong>Research Question:</strong> How does prioritizing heterogeneity mitigate systematic blind spots in medicine created by homogenous research cohorts?</p>
+
+        <p>For decades, standard medical treatments and prescription drug dosages were developed using clinical trial cohorts that were overwhelmingly from one population: white males. The result? A benchmark that treated a single group as the universal default, leaving women and people of color burdened by “care” not truly created for them.</p>
+
+        <p>Science claims to be objective, but it's an undeniable fact that hypotheses are tested through the lived experiences of humans in the lab. A sample not representative of the population cannot produce results that are generalizable on a wide scale.</p>
+
+        <p>Prioritizing diversity within STEM is not merely a social obligation, but a necessity in a world made for more than one population. True innovation is inseparable from heterogeneity.</p>
+
+      <h2>Importance of Distinct Perspectives</h2>
+
+        <p>Diverse representation is essential for objective, innovative STEM research, but what specific advantages does it give?</p>
+
+        <p>Modern STEM research thrives off group collaboration rather than a single, independent genius. Therefore, due importance must be given to the composition of a group. A team from identical backgrounds would likely approach the same issue from similar perspectives. True diversity introduces entirely new angles and unique insights, which is the key driver behind research breakthroughs. Data analyzed by Kenneth Gibbs Jr. in <em>Scientific American</em> supports the claim that advantages are found in diversity, noting that when intelligent individuals form a team, their different backgrounds matter more than their individual intelligence metrics. Diverse perspectives expand a group’s collective ability, not in a straightforward 1+1 way, rather boosting the group’s efficiency exponentially. Variety in both discipline and demographic forces members to challenge assumptions that a uniform group would accept without question, directly boosting team productivity and project efficiency.</p>
+
+        <p>Think about it this way: a group of students may excel in math, achieving all 100s each assignment. When it comes to reading, though, their grades could all be abysmal. When working on a project, would they be more ingenious than a group of students achieving an A average across all core subjects? In the end, what makes us human is our strength. Humans come in all sizes, shapes, colors, religions, and this point should be properly represented in medical care.</p>
+
+      <h2>Expanding Research Cohorts</h2>
+
+        <p>To expand on the specific effects of prioritizing one demographic above others in healthcare, we need to look at how baseline metrics fail when applied to the broader, diverse population. When clinical trials attempt to use a single group as the universal default, it results in medical guidelines overlooking how even common conditions, like cardiovascular diseases or medicine side effects, manifest uniquely in women and people of color. Zebralter Medical dives further into how a lack of representative data creates immediate public health dangers. When medicine is not truly objective, it allows unequal accuracy to occur easily and compromises patient safety. This leads to the exact “blind spots” that lead to more fatalities for women and people of color.</p>
+
+        <p>The problem with overlooking certain demographics within healthcare is one that has long been noticed, especially by minoritized researchers. They are statistically more likely to identify and study variables that dominant demographics look past. Environmental racism, localized community health disparities, etc., are all important factors to consider in healthcare and medical research, and yet their effects are far understudied.</p>
+
+        <p>According to the California Sea Grant, we can’t sit here waiting for something to change. Only by fighting to introduce non-traditional perspectives can we alter what research gets funded and prioritized. If more people show care, more studies are likely to be funded. Through this, slowly but surely, we can expand the overall scope of global scientific inquiry.</p>
+
+      <h2>How to Patch up the Blind Spots</h2>
+
+        <p>The amount of money poured into advancing healthcare is constantly growing, yet the quality of care for people who don’t fit the target demographic is not growing at an equivalent rate. A more diverse sample for healthcare research is necessary to ensure specific standards for each unique demographic. Which brings about the double meaning of this topic. Since heterogeneity promotes innovative research, then it shows that not only the research subjects, but the researchers themselves should come from varied backgrounds. Representative sampling is, without a doubt, one of the most effective ways to reduce bias across the board.</p>
+
+        <p>Through resisting homogeneity in healthcare, in the terms of promoting women, people of color, and people from different cultures, we can effectively patch the holes in the system left by generations catering to a single demographic. White males have never made up the entire world, and pretending they do is only holding us back.</p>
+
+      <h2>References</h2>
+
+        <p>California Sea Grant. (n.d.). <em>Diversity in STEM: What it is, why does it matter, and how do we increase it?</em> University of California San Diego. <a href="https://caseagrant.ucsd.edu/news/diversity-stem-what-it-why-does-it-matter-and-how-do-we-increase-it" target="_blank">https://caseagrant.ucsd.edu/news/diversity-stem-what-it-why-does-it-matter-and-how-do-we-increase-it</a></p>
+
+        <p>Gibbs, K., Jr. (2014, September 10). <em>Diversity in STEM: What it is and why it matters</em>. <em>Scientific American Blog Network</em>. <a href="https://www.scientificamerican.com/blog/voices/diversity-in-stem-what-it-is-and-why-it-matters/" target="_blank">https://www.scientificamerican.com/blog/voices/diversity-in-stem-what-it-is-and-why-it-matters/</a></p>
+
+        <p>Smith, R. F. (2024, January 9). <em>Diversity in STEM: Why it matters</em>. Robert F. Smith. <a href="https://robertsmith.com/blog/diversity-in-stem/" target="_blank">https://robertsmith.com/blog/diversity-in-stem/</a></p>
+
+        <p>McConchie, J. (2022, September 26). <em>How do we bring more diversity to STEM?</em> Greater Good Science Center at UC Berkeley. <a href="https://greatergood.berkeley.edu/article/item/how_do_we_bring_more_diversity_to_stem" target="_blank">https://greatergood.berkeley.edu/article/item/how_do_we_bring_more_diversity_to_stem</a></p>
+
+        <p>LabXchange. (n.d.). <em>The benefits of increasing diversity in STEM</em>. <a href="https://about.labxchange.org/blog/the-benefits-of-increasing-diversity-in-stem" target="_blank">https://about.labxchange.org/blog/the-benefits-of-increasing-diversity-in-stem</a></p>
+
+        <p>Zebralter Medical. (n.d.). <em>Why diversity in STEM matters in 2025</em>. <a href="https://zebraltermedical.org/why-diversity-in-stem-matters-in-2025/" target="_blank">https://zebraltermedical.org/why-diversity-in-stem-matters-in-2025/</a></p>
+     
+        <!-- Optional: Author Bio -->
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Hameedah Salam leverages her writing to share insights and explore discoveries in her primary fields of interest: neuroscience and public health. She is dedicated to using her communication skills to make scientific information impactful and easy to understand. </p>
+    </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

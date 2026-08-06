@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How the Immune System Can Be Trained to Fight Cancer - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+
+     .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="../categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="../categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="../categories/policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="../categories/ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
+        <a href="../categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="../categories/skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="../categories/spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="../categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="../categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="../about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="../index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="../index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="../about.html">About</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/oncology.html" class="back-button">← Back to Cancer / Oncology</a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag oncology">Cancer / Oncology</span>
+        <span>📅 July 2026</span>
+        <span>✍️ By Anushka Pandey </span>
+      </div>
+
+      <!-- Article Title -->
+      <h1>How the Immune System Can Be Trained to Fight Cancer</h1>
+
+      <!-- ===== YOUR ARTICLE CONTENT ===== -->
+      
+      <p>Imagine if the body's own immune system could be trained to hunt down cancer cells with the same precision it uses to fight dangerous viruses. What once sounded like science fiction is now becoming reality through cancer immunotherapy, one of the most transformative advances in modern medicine.</p>
+
+      <p>For decades, cancer treatment relied heavily on surgery, chemotherapy, and radiation. While these methods remain important, they often come with significant limitations; some damage healthy tissue alongside cancer cells, and others become less effective over time as tumors adapt. In recent years, however, researchers have begun approaching cancer from a different angle. Instead of targeting the tumor directly, scientists are increasingly focusing on the body's own defense system; the immune system. This shift has led to the rise of cancer immunotherapy, a rapidly growing field centered on teaching immune cells how to recognize and destroy cancer more effectively.</p>
+
+      <p>Usually, the immune system keeps watch over bodily processes without pause. Instead of ignoring irregularities, certain white blood cells - especially T cells - detect corrupted or diseased cells and remove them early. Yet tumors differ since they stem from healthy tissue originally. Because of this origin, malignant cells occasionally dodge surveillance by mimicking ordinary ones or dampening local immunity (National Cancer Institute [NCI], 2022). In some cases, cancers reshape their surroundings to exhaust adjacent defenders, making growth possible even when protection systems are active.</p>
+
+      <p>A key advance in cancer immunology centers on drugs called immune checkpoint inhibitors. Immune checkpoints are proteins found on immune cells that normally act as "brakes," preventing the immune system from attacking healthy tissues. Tumors often exploit these checkpoint proteins to avoid immune detection. By blocking these signals, checkpoint inhibitors release those brakes, allowing T cells to recognize and destroy cancer cells more effectively. Therapies targeting checkpoint proteins such as PD-1 (Programmed Cell Death Protein 1), PD-L1 (Programmed Death Ligand 1), and CTLA-4 (Cytotoxic T-Lymphocyte-Associated Protein 4) have produced remarkable results in cancers including melanoma and lung cancer, leading to significant improvements in long-term survival (Wei et al., 2018).</p>
+
+      <p>One approach gaining attention is Chimeric Antigen Receptor (CAR) T-cell therapy, which genetically engineers a patient's own immune cells to recognize and attack cancer more effectively. From the blood, T cells get collected, then changed in labs to target proteins present on tumors. After alteration, these cells multiply before returning to the body through infusion. Inside, they track down harmful cells more accurately than many traditional options. Notably, outcomes stand out in leukemias and lymphomas - cases once resistant to therapies now show lasting recovery (Sterner & Sterner, 2021). Even though risks exist, such as severe reactions, the method reshaped thinking across oncology research.</p>
+
+      <p>Cancer vaccines are being studied today, though their mechanism differs significantly from traditional infection-targeting shots. While common vaccinations prevent illness, specific examples - such as the HPV vaccine - reduce tumor risk by stopping particular viral infections before they start. On the other hand, therapeutic forms work after diagnosis, seeking to stimulate immune responses when cancer is already present. These treatments expose the body's defenses to signals found only on cancerous cells, sharpening its ability to detect irregular tissue. Although many still reside in trial phases, specialists view them as potential components within broader future regimens (Saxena et al., 2021).</p>
+
+      <p>Although cancer immunotherapy has transformed cancer treatment, its effectiveness varies widely among patients and cancer types. Some tumors evolve rapidly, allowing them to evade immune attack, while others create a suppressive microenvironment that weakens immune cell activity. In some cases, an overstimulated immune response can also damage healthy tissues, leading to side effects that resemble autoimmune disorders. Researchers are still working to understand why some patients experience remarkable, long-lasting responses while others see little benefit. Factors such as genetic differences, tumor mutations, and even the composition of the gut microbiome may all influence treatment outcomes (Hou et al., 2022).</p>
+
+      <p>Looking ahead, scientists are developing highly personalized approaches to overcome these challenges. Advances in genetic sequencing are making it possible to create personalized cancer vaccines tailored to the unique mutations within an individual patient's tumor. At the same time, artificial intelligence is helping researchers identify new immune targets, predict which patients are most likely to benefit from specific therapies, and uncover complex biological patterns that would be nearly impossible to detect manually. Together, these innovations are paving the way for more precise, personalized immunotherapies with greater effectiveness and fewer side effects.</p>
+
+      <p>Cancer immunotherapy marks a turning point in modern medicine. Rather than relying solely on external treatments to eliminate tumors, researchers are learning how to harness the body's own immune system as a powerful weapon against cancer. Although important challenges remain—including treatment resistance, side effects, and ensuring therapies work across more cancer types—the progress made over the past two decades has been remarkable. As personalized cancer vaccines, AI-guided drug discovery, and precision immunotherapies continue to advance, the future of cancer treatment is becoming increasingly tailored to each individual patient. What was once considered an experimental approach is rapidly evolving into one of the foundations of oncology, offering new hope that cancer care will become more effective, more targeted, and ultimately more lifesaving than ever before.</p>
+
+      <h2>References</h2>
+
+      <p>Hou, X., Zhang, Y., Liang, P., Zhang, Z., Xu, Y., Zhang, L., & Fan, D. (2022). Immune checkpoint inhibitors and the gut microbiota: Current evidence and challenges. <em>Frontiers in Immunology, 13</em>, 1011830. https://doi.org/10.3389/fimmu.2022.1011830</p>
+
+      <p>National Cancer Institute. (2022). <em>Immunotherapy to treat cancer</em>. U.S. Department of Health and Human Services. https://www.cancer.gov/about-cancer/treatment/types/immunotherapy</p>
+
+      <p>Saxena, M., van der Burg, S. H., Melief, C. J. M., & Bhardwaj, N. (2021). Therapeutic cancer vaccines. <em>Nature Reviews Cancer, 21</em>(6), 360–378. https://doi.org/10.1038/s41568-021-00346-0</p>
+
+      <p>Sterner, R. C., & Sterner, R. M. (2021). CAR-T cell therapy: Current limitations and potential strategies. <em>Blood Cancer Journal, 11</em>(4), 69. https://doi.org/10.1038/s41408-021-00459-7</p>
+
+      <p>Wei, S. C., Duffy, C. R., & Allison, J. P. (2018). Fundamental mechanisms of immune checkpoint blockade therapy. <em>Cancer Discovery, 8</em>(9), 1069–1086. https://doi.org/10.1158/2159-8290.CD-18-0367</p>
+
+      <!-- ===== END OF ARTICLE CONTENT ===== -->
+
+    </article>
+  </div>
+
+  <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Anushka Pandey uses writing to connect her passion for research and medicine, making complex ideas engaging and accessible to everyone. Her work focuses closely on molecular biology, pediatrics, and public health.</p>
+       </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

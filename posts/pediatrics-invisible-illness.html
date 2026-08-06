@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invisible Illness: The Hidden Cause Behind Rising Teenage ‘Laziness’ - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Article-specific styles */
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--darker-blue);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-content ul,
+    .article-content ol {
+      margin: 25px 0;
+      padding-left: 30px;
+    }
+    
+    .article-content li {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+    
+    .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/pediatrics.html" class="back-button">← Back to Pediatrics</a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag pediatrics">Pediatrics</span>
+        <span>📅 June 2026</span>
+        <span>✍️ By Hameedah Salman </span>
+      </div>
+
+      <!-- Article content/html -->
+   <h1>Invisible Illness: The Hidden Cause Behind Rising Teenage ‘Laziness’</h1>
+
+        <p>Across the world, teens rise in the morning for school, balance social and academic expectations, only to end their days with less-than-optimal amounts of sleep; however, some go about their day sleeping at every possible moment. On the way to school, at school, after school, and even during activities, they actually want to do. They get labeled ‘lazy’ and ‘unmotivated’, often by adults who jump to the most typical teenage stereotypes because they fail to question the ‘why’.</p>
+
+    <h2>Drawing the Line between Teenage Laziness and Illness</h2>
+
+        <p>Teens are known for their resilience, so when their bodies are constantly deprived of what they should have in abundance, it begs the question: how many ‘lazy’ adolescents are actually unwell?</p>
+
+        <p>Recent research from Columbia University Mailman School of Public Health shows that mental health concerns among young people have been steadily increasing worldwide, particularly among adolescent girls. Many of these struggles are “internalizing,” meaning they appear through exhaustion, withdrawal, low motivation, or sadness rather than obvious disruptive behavior.</p>
+
+        <p>Adolescence is a period marked by a staggering amount of changes. Hormones, brain development, physical growth, and teenagers are constantly in a state of limbo, allowing concerning symptoms to be written off as ‘temporary developmental phenomena’ or, better yet, due to ‘heightened age-associated anxiety’.</p>
+
+        <p>Despite my earlier points, it’s not just physical issues that are increasing globally in our youth. Mental health concerns like anxiety, depression, and psychological distress are rising, impacting the overall wellness of young girls. Unlike many physical conditions, mental health concerns always seem to be well known by all doctors. More accurately, one specific condition. Regardless of the symptoms many teenage girls display, many receive the same diagnosis of anxiety, subjecting them to years of medical neglect and gaslighting.</p>
+
+        <p>Though I wonder, if teens are simply supposed to ‘bounce back’ no matter the ailment, why can’t adults recognize the severity of situations they don’t?</p>
+
+    <h2>Defining Invisible Illness</h2>
+
+        <p>You may have never heard the term ‘Invisible Illness’ or seen one. Why? It’s in the name. Unless you know what you’re looking for, you’d likely never spot them. This term isn’t for a specific few conditions, rather all medical issues that aren’t visible, making them more obvious than situations like missing a limb or cancer, hair loss.</p>
+
+        <p>Invisible Illnesses can include both physical and mental health conditions, ranging from chronic fatigue and autonomic disorders to anxiety and depression. According to Harvard Health Publishing, these conditions may not show outward physical signs, yet they can still severely interfere with daily functioning, energy levels, concentration, and emotional well-being. Because symptoms are ‘hidden’, many people living with these conditions are dismissed by society and even their own doctors with phrases like “you look fine” even when they are struggling internally. This creates a paradox where, for many adolescents, the hardest part of an invisible illness isn’t the symptoms themselves, but convincing others that those symptoms are real.</p>
+
+    <h2>Symptoms Mistaken for “Laziness”</h2>
+
+        <p>When most adults see a teenager sleeping in class, they quickly assume they either stayed up all night on something like video games, are disinterested, or are simply lazy. This stereotype, even if they are often correct, does more harm than good. Here are common invisible illnesses that parallel teenage stereotypes:</p>
+
+        <p><strong>Adults See:</strong> Sleeping all day — <strong>Possible Reality:</strong> Chronic fatigue</p>
+        <p><strong>Adults See:</strong> Missing school — <strong>Possible Reality:</strong> POTS symptom</p>
+        <p><strong>Adults See:</strong> Poor concentration — <strong>Possible Reality:</strong> Brain fog</p>
+        <p><strong>Adults See:</strong> Lack of motivation — <strong>Possible Reality:</strong> Depression</p>
+        <p><strong>Adults See:</strong> Isolation — <strong>Possible Reality:</strong> Anxiety/exhaustion</p>
+
+        <p>Studies surrounding adolescent fatigue and common conditions such as POTS (Postural Orthostatic Tachycardia Syndrome) show that symptoms like dizziness, headaches, nausea, brain fog, and exhaustion may seriously disrupt school performance and social life. Yet, because affected teens may still look outwardly ‘healthy’, their symptoms are frequently minimized or misunderstood.</p>
+
+    <h2>The Damage of Being Called Lazy</h2>
+
+        <p>Although on one hand, being labeled as ‘lazy’ affects the quality of health care a teen may receive for years to come, it also damages them emotionally. All of their issues being swept under a, truthfully, insulting label, changes the way they act.</p>
+
+        <p>Being repeatedly told that their symptoms are exaggerated or imaginary can create shame, self-doubt, and emotional isolation, causing a harmful cycle of discomfort and depression. Some adolescents eventually stop advocating for themselves altogether, fearing they will once again be dismissed as dramatic, irresponsible, or the dreaded “lazy”.</p>
+
+        <p>Adolescence is key for building secure trust habits, so teaching a child to doubt themselves or even, you will affect them for life. Many teens go down two paths, with some intermixing in the middle. They may come to believe their ‘trusted adults’ don’t truly have their best interests in mind, or simply stop asking for help and start internalizing the label, pushing their body into irreparable damage.</p>
+
+        <p>If things do come to this, they’re often questioned as to why they stayed quiet. The uncomfortable teenage phenomenon of always being ‘at fault’.</p>
+
+    <h2>Support Teen Struggles</h2>
+
+        <p>Not every struggling teenager is lazy. Some are fighting physical illnesses no one can see, while others are carrying invisible psychological burdens that quietly chip away at their energy and motivation day by day. Before labeling adolescents as unmotivated or irresponsible, adults should consider digging deeper and making sure the teens who trust them are not fighting their battles alone.</p>
+
+    <h2>Works Cited</h2>
+
+        <p>Cherry, Kendra. “What Is Invisible Illness? You Don’t Look Sick.” <em>Verywell Mind</em>, Dotdash Meredith, <a href="https://www.verywellmind.com/what-is-invisible-illness-you-dont-look-sick-5119873" target="_blank">https://www.verywellmind.com/what-is-invisible-illness-you-dont-look-sick-5119873</a>. Accessed 1 May 2026.</p>
+
+        <p>“How to Explain Invisible Illness to a Healthy Person.” <em>Intronix Technologies</em>, <a href="https://www.intronixtech.com/how-to-explain-invisible-illness-to-a-healthy-person/" target="_blank">https://www.intronixtech.com/how-to-explain-invisible-illness-to-a-healthy-person/</a>. Accessed 1 May 2026.</p>
+
+        <p>“Invisible Illness: More Than Meets the Eye.” <em>Harvard Health Publishing</em>, Harvard Medical School, <a href="https://www.health.harvard.edu/diseases-and-conditions/invisible-illness-more-than-meets-the-eye" target="_blank">https://www.health.harvard.edu/diseases-and-conditions/invisible-illness-more-than-meets-the-eye</a>. Accessed 1 May 2026.</p>
+
+        <p>Kizilbash, Sarah J., et al. “Adolescent Fatigue, POTS, and Recovery: A Guide for Clinicians.” <em>Current Problems in Pediatric and Adolescent Health Care</em>, vol. 44, no. 5, 2014, pp. 108–133. <em>PubMed Central</em>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5819886/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC5819886/</a>. Accessed 11 May 2026.</p>
+
+        <p>“New Evidence of Rising Youth Mental Health Concerns.” <em>Columbia University Mailman School of Public Health</em>, 8 Aug. 2023, <a href="https://www.publichealth.columbia.edu/news/new-research-examines-evidence-rising-youth-mental-health-concerns" target="_blank">https://www.publichealth.columbia.edu/news/new-research-examines-evidence-rising-youth-mental-health-concerns</a>. Accessed 3 May 2026.</p>
+
+        <p>“Understanding POTS: A Growing Concern Among Teens.” <em>University of Utah Health</em>, May 2024, <a href="https://healthcare.utah.edu/the-scope/kids-zone/all/2024/05/understanding-pots-growing-concern-among-teens" target="_blank">https://healthcare.utah.edu/the-scope/kids-zone/all/2024/05/understanding-pots-growing-concern-among-teens</a>. Accessed 3 May 2026.</p>
+
+        <p>“Youth Mental Health and Hidden Struggles in Adolescence.” <em>PubMed Central</em>, <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8821406/" target="_blank">https://pmc.ncbi.nlm.nih.gov/articles/PMC8821406/</a>. Accessed 3 May 2026.</p>
+    <!-- Optional: Author Bio -->
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Hameedah Salam leverages her writing to share insights and explore discoveries in her primary fields of interest: neuroscience and public health. She is dedicated to using her communication skills to make scientific information impactful and easy to understand. </p>
+    </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
