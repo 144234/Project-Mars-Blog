@@ -164,4 +164,4 @@ if (document.querySelector('.article-content')) {
   addShareButtons();
 }
 
-console.log('Project Mars Blog loaded successfully! 🚀');
+console.log('Project Mars Blog loaded successfully! ');

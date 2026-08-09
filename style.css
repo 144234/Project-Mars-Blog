@@ -197,12 +197,30 @@ body {
   background: var(--darker-blue);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo a {
-  color: var(--white);
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: 1px;
+}
+
+.logo img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--light-blue);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.06);
+  border-color: var(--medium-blue);
 }
 
 .nav-right {
