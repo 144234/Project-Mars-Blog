@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITLE  - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Article-specific styles */
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    } 
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--darker-blue);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-content ul,
+    .article-content ol {
+      margin: 25px 0;
+      padding-left: 30px;
+    }
+    
+    .article-content li {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+    
+    .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/skills.html" class="back-button">← Back to Skills </a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag skill"> Skills </span>
+        <span>📅 July 2025</span>
+        <span>✍️ By Author </span>
+      </div>
+
+      <!-- Article content/html -->
+<h1>How to Choose a Research Project That You Are Passionate About</h1>
+
+<p>Science research is not easy to start. It can feel overwhelming: there is a lot of information to digest, and there are so many tips and tricks being thrown at you that it is easy to get confused and still not know where to begin.</p>
+
+<p>For these reasons, it is important to start at the very beginning: how can you choose a research topic that you are passionate about and that you can actually investigate?</p>
+
+<p>The first step in conducting any form of independent research is developing a topic that aligns with your interests, available resources, and current skill set. In scientific research, a major problem many researchers around the world face is limited funding. It is therefore important to consider the resources you have at hand. For example, ask yourself whether you have access to a laboratory or whether you have basic coding knowledge. These factors can help create a successful project, but you can still produce great research without them—or with only limited access to them.</p>
+
+<p>After considering what you have, the next step is to dive into your research topic and decide what you specifically want to investigate. This guide provides steps to help you pick the best possible research topic. You do not have to follow each step perfectly; use this guide to support you through parts of the process you are unsure about.</p>
+
+<h2>Step 1: Identify an Area of Interest</h2>
+
+<p>When planning to conduct research, most people begin with a broad idea. For example, you might want to explore a specific disease, such as Alzheimer’s disease or diabetes. Maybe you want to enter the world of genetics and explore it further.</p>
+
+<p>These are extremely broad topics and are nowhere near specific enough for a final research question—but they are perfect places to begin. Make sure the broad topic is something you are genuinely passionate about, because passion often leads to better research. You do not need extensive prior knowledge of the topic, but make sure it is something you can realistically work with and want to learn more about.</p>
+
+<h2>Step 2: Do a Surface-Level Dive</h2>
+
+<p>Now it is time to become familiar with your broad research idea. This is where you begin narrowing your focus from the broad idea you started with and identify specific keywords and phrases.</p>
+
+<p>Some useful starting places include quick Google searches, AI summaries of the topic, and Wikipedia. Wikipedia can be especially helpful at this stage because it contains a large amount of introductory information with embedded links that allow you to explore multiple connected ideas at the same time. You can learn about different phrases, track what they mean, and understand how they relate to one another at a big-picture level.</p>
+
+<p>As you explore, begin tracking your initial research, papers, and notes in a research notebook. This can be a physical notebook, a Google Doc, a Google Colab notebook, or a Word document. Keeping organized notes will help later when writing your paper, and it is often required for science fairs and competitions.</p>
+
+<h3>A Note About AI</h3>
+
+<p>AI can be a useful tool for explaining key concepts, unfamiliar words, and ideas that may take much longer to understand on your own. It can be efficient and helpful during the initial stages of learning new vocabulary.</p>
+
+<p>However, do not become overly reliant on it as you continue your research. If AI ends up conducting the research for you, you will not develop the skills you need to become an independent researcher. Use it to help you understand, not to replace your thinking, reading, note-taking, or analysis.</p>
+
+<h2>Step 3: Brainstorm Specific Topics</h2>
+
+<p>Once you have completed an initial literature search and narrowed your ideas to a chain of related words under your broad topic, it is time to choose your favorite specific ideas and explore them further.</p>
+
+<p>Start by making a list of five or six possible subtopics with enough information available about each one. Then narrow the list down to one or two ideas. Look back at the surface-level research you completed and see whether there are problems, unanswered questions, discrepancies, or limitations in what has already been done that a potential research project could help address.</p>
+
+<p>When reviewing the terms you explored, look for problems or ideas that scientists need to investigate further. At this point, you do not need a completely concrete project idea. You only need a narrowed-down chain of thoughts and, most importantly, a <strong>problem</strong> to solve. The following steps will help make this clearer.</p>
+
+<h2>Step 4: Use Google Scholar</h2>
+
+<p>Using the information, words, and ideas you have already collected, begin looking for more detailed studies through <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+
+<p>Google Scholar is a free search engine created by Google that helps you find published scientific studies from around the world. It includes scholarly articles, books, academic papers, conference papers, theses, and other research from universities, publishers, professional organizations, and many fields of study.</p>
+
+<p>This is likely where you will read your first scientific research paper. Reading research papers can be a major learning curve because they often contain complex language, technical vocabulary, and unfamiliar ideas. A future Project Mars post will go more deeply into how to read scientific papers, but here are some key starting tips:</p>
+
+<ul>
+  <li><strong>Read the abstract first:</strong> The abstract is a summary of the entire paper, including what the study is about and what it found. It will help you decide whether the paper is relevant to your question.</li>
+  <li><strong>Read the introduction:</strong> The introduction contains background information needed to understand the topic. Take notes and track unfamiliar vocabulary as you go.</li>
+  <li><strong>Do not be afraid to write things down:</strong> Record your thoughts, questions, ideas, and new vocabulary. Making a vocabulary list is encouraged.</li>
+  <li><strong>Skim the methods section at first:</strong> You may need to return to the methods later when you begin planning an experiment, but you do not need to understand every laboratory technique immediately.</li>
+  <li><strong>Focus on the results and discussion:</strong> You do not need to memorize every number or value. Instead, focus on what the study means, the trends in the results, and why those trends are significant.</li>
+  <li><strong>Pay close attention to the discussion:</strong> This section often explains the study’s results, trends, future directions, and limitations.</li>
+</ul>
+
+<h2>Step 5: Find Gaps in Knowledge</h2>
+
+<p>Science is an ever-evolving field. Discoveries are made every day, changing what scientists know and adding to the world’s knowledge. If you look at the right parts of published research, you can find areas within your topics of interest that need more work and further study.</p>
+
+<p>The <strong>future directions</strong> and <strong>limitations</strong> sections of research papers will be especially useful at this stage.</p>
+
+<ul>
+  <li><strong>Future directions</strong> explain how researchers think their study could be expanded in the future. These sections can give you ideas for new experimental questions based on the topics you initially chose.</li>
+  <li><strong>Limitations</strong> explain where a study could be improved. They are another useful place to find more specific research ideas.</li>
+</ul>
+
+<p>You may need to read more than one research paper to develop a solid idea and accumulate enough information to work with. However, by following the same overall steps you used for the first paper, you will develop a stronger understanding of your topic and a more focused research direction.</p>
+
+<p>This is the step where you should start to identify a problem you can solve or answer based on your topic of interest. From that problem, you can build a research question.</p>
+
+<h2>Step 6: Develop a Hypothesis</h2>
+
+<p>From the previous step, you should now have a problem to solve or a research question to answer. Now it is time to translate that question into a hypothesis, which will serve as the roadmap for your research project.</p>
+
+<p>A hypothesis is an educated guess based on the papers, information, and notes you have already collected in your research notebook. It does not have to be correct, but it does need to be well formed. Your hypothesis guides your project from its starting point and reminds you what you are specifically trying to investigate and discover.</p>
+
+<p>A strong hypothesis often follows the <strong>if–then–because</strong> format:</p>
+
+<ul>
+  <li><strong>If:</strong> The context or condition you are testing</li>
+  <li><strong>Then:</strong> Your prediction of what will happen in that context</li>
+  <li><strong>Because:</strong> The scientific explanation for why you made that prediction, also called the warrant</li>
+</ul>
+
+<p>For example:</p>
+
+<blockquote>
+  <p>If bean plants receive more hours of blue-spectrum light each day, then they will grow taller than plants receiving less blue-spectrum light because blue light can affect plant growth signals and photosynthesis.</p>
+</blockquote>
+
+<p>From a humanities perspective, your hypothesis is similar to an argument with a claim, evidence, and warrant.</p>
+
+<h2>Trust the Process</h2>
+
+<p>By following these steps as closely as possible, you will have a strong starting point for developing your first research project. Because this may be your first research topic and you may have limited exposure to the world of scientific research, your topic might be relatively common or not extremely niche. <strong>That is okay.</strong></p>
+
+<p>It is your first project, and it does not need to be perfect on the first try. Trust the process, choose a topic you are genuinely passionate about, and learn as much as you can. Research is about building your experience, confidence, and curiosity about a subject over time.</p>
+
+    <!-- Optional: Author Bio -->
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Sarah Verma </p>
+    </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

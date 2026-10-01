@@ -3,74 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TITLE  - Project Mars</title>
+
+  <title>Welcome to the Research Blog! - Project Mars</title>
+
   <link rel="stylesheet" href="../style.css">
+
   <style>
-    /* Article-specific styles */
     .article-container {
       max-width: 900px;
       margin: 60px auto;
       padding: 0 20px;
-    } 
-    
+    }
+
     .article-content {
       background: var(--white);
       padding: 60px;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
       line-height: 1.8;
     }
-    
+
     .article-content h1 {
       font-size: 2.8rem;
       color: var(--darkest-blue);
-      margin-bottom: 30px;
+      margin-bottom: 16px;
       padding-bottom: 20px;
       border-bottom: 3px solid var(--medium-blue);
     }
-    
+
     .article-content h2 {
       font-size: 2rem;
       color: var(--dark-blue);
       margin-top: 40px;
       margin-bottom: 20px;
     }
-    
+
     .article-content h3 {
       font-size: 1.5rem;
       color: var(--darker-blue);
       margin-top: 30px;
       margin-bottom: 15px;
     }
-    
+
     .article-content p {
       font-size: 1.1rem;
       color: var(--darker-blue);
       margin-bottom: 25px;
       line-height: 1.8;
     }
-    
+
     .article-content ul,
     .article-content ol {
       margin: 25px 0;
       padding-left: 30px;
     }
-    
+
     .article-content li {
       font-size: 1.1rem;
       color: var(--darker-blue);
       margin-bottom: 12px;
       line-height: 1.7;
     }
-    
+
     .article-content img {
       max-width: 100%;
       height: auto;
       border-radius: 8px;
       margin: 30px 0;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
-    
+
     .article-meta {
       display: flex;
       gap: 20px;
@@ -79,12 +81,20 @@
       border-bottom: 2px solid var(--light-blue);
       flex-wrap: wrap;
     }
-    
+
     .article-meta span {
       font-size: 0.95rem;
       color: var(--muted-blue);
     }
-    
+
+    .article-date {
+      color: var(--muted-blue);
+      font-size: 0.95rem;
+      font-style: italic;
+      margin-top: -8px;
+      margin-bottom: 32px;
+    }
+
     .back-button {
       display: inline-block;
       margin-bottom: 30px;
@@ -94,14 +104,14 @@
       padding: 10px 20px;
       border: 2px solid var(--medium-blue);
       border-radius: 25px;
-      transition: all 0.3s;
+      transition: all 0.3s ease;
     }
-    
+
     .back-button:hover {
       background: var(--medium-blue);
       color: var(--darkest-blue);
     }
-    
+
     .author-bio {
       background: var(--bg-beige);
       padding: 30px;
@@ -109,93 +119,252 @@
       margin-top: 60px;
       border-left: 5px solid var(--medium-blue);
     }
-    
+
     .author-bio h3 {
       color: var(--darkest-blue);
-      margin-bottom: 10px;
+      margin: 0 0 10px;
     }
-    
+
     .author-bio p {
       color: var(--darker-blue);
       font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 700px) {
+      .article-container {
+        margin: 35px auto;
+        padding: 0 16px;
+      }
+
+      .article-content {
+        padding: 32px 24px;
+      }
+
+      .article-content h1 {
+        font-size: 2rem;
+      }
+
+      .article-content h2 {
+        font-size: 1.6rem;
+      }
+
+      .article-content p,
+      .article-content li {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
+
 <body>
   <!-- Sidebar Navigation -->
   <div class="sidebar" id="sidebar">
     <div class="sidebar-header">
       <h2>Project Mars</h2>
-      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+
+      <button
+        class="close-sidebar"
+        type="button"
+        aria-label="Close navigation menu"
+        onclick="toggleSidebar()"
+      >
+        ✕
+      </button>
     </div>
-    <nav class="sidebar-nav">
+
+    <nav class="sidebar-nav" aria-label="Main navigation">
       <a href="../index.html" class="sidebar-link"> Home</a>
+
       <div class="sidebar-section">
         <h3>Categories</h3>
-        <a href="categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
-        <a href="categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
-        <a href="categories/policy.html" class="sidebar-link"> Public Policy</a>
-        <a href="categories/ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
-        <a href="categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+
+        <a href="../categories/pediatrics.html" class="sidebar-link">
+           Pediatrics
+        </a>
+
+        <a href="../categories/oncology.html" class="sidebar-link">
+           Cancer / Oncology
+        </a>
+
+        <a href="../categories/policy.html" class="sidebar-link">
+           Public Policy
+        </a>
+
+        <a href="../categories/ai-medicine.html" class="sidebar-link">
+           AI in Medicine
+        </a>
+
+        <a href="../categories/neuroscience.html" class="sidebar-link">
+           Neuroscience
+        </a>
       </div>
+
       <div class="sidebar-section">
         <h3>Series</h3>
-        <a href="categories/skills.html" class="sidebar-link"> Research Skills 101</a>
-        <a href="categories/spotlights.html" class="sidebar-link"> Spotlights</a>
-        <a href="categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+
+        <a href="../categories/skills.html" class="sidebar-link">
+           Research Skills 101
+        </a>
+
+        <a href="../categories/spotlights.html" class="sidebar-link">
+           Spotlights
+        </a>
+
+        <a href="../categories/breakthroughs.html" class="sidebar-link">
+           Breakthroughs
+        </a>
       </div>
+
       <div class="sidebar-section">
         <h3>Organization</h3>
-        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
-        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
-        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+
+        <a href="../categories/updates.html" class="sidebar-link">
+          📢 Organization Updates
+        </a>
+
+        <a href="../about.html" class="sidebar-link">
+          ℹ️ About Us
+        </a>
+
+        <a href="../index.html#contact" class="sidebar-link">
+          📧 Contact
+        </a>
       </div>
+
       <div class="sidebar-cta">
         <h3>Join Our Team</h3>
         <p>Want to write for us?</p>
-        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+
+        <a
+          href="https://forms.google.com/your-placeholder-form"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="apply-button"
+        >
+          Apply to be a Writer →
+        </a>
       </div>
     </nav>
   </div>
 
-  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+  <div
+    class="sidebar-overlay"
+    id="sidebarOverlay"
+    onclick="toggleSidebar()"
+  ></div>
 
-  <!-- Main Navigation Bar -->
+  <!-- Main Navigation -->
   <nav class="main-nav">
     <div class="container">
-      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        onclick="toggleSidebar()"
+      >
+        ☰ Menu
+      </button>
+
       <div class="logo">
-        <a href="index.html">Project Mars</a>
+        <a href="../index.html" aria-label="Project Mars Blog home">
+          <img
+            src="../assets/images/mars_blog_logo.jpg"
+            alt="Project Mars Blog logo"
+          >
+        </a>
       </div>
+
       <div class="nav-right">
-        <a href="about.html">About</a>
-        <a href="index.html#contact">Contact</a>
+        <a href="../about.html">About</a>
+        <a href="../index.html#contact">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Article Content -->
-  <div class="article-container">
-    <a href="../categories/updates.html" class="back-button">← Back to Updates</a>
-    
+  <main class="article-container">
+    <a href="../categories/updates.html" class="back-button">
+      ← Back to Organization Updates
+    </a>
+
     <article class="article-content">
-      <!-- Article Meta Info -->
       <div class="article-meta">
-        <span class="category-tag updates"> Updates </span>
-        <span>📅 June 2025</span>
-        <span>✍️ By Sarah Verma </span>
+        <span class="category-tag updates">Organization Updates</span>
+        <span>📅 June 28, 2025</span>
+        <span>✍️ By Sarah Verma</span>
       </div>
 
-      <!-- Article content/html -->
+      <h1>Welcome to the Research Blog!</h1>
 
+      <p class="article-date">Published June 28, 2025</p>
 
-    <!-- Optional: Author Bio -->
+      <p>Think back to the last time you went to a science fair or symposium—or, more realistically, the last time you were doomscrolling on TikTok or Instagram and came across videos of students discussing the research they conducted in high school, the 50 different templates they used to cold-email professors, or how they became a third author on a publication in <em>Nature</em> or <em>PubMed</em>.</p>
+
+      <p>As high school students, many of us have no idea where to start when it comes to writing papers, finding reputable sources for research articles, or designing and conducting experiments with machines and substances that we do not even know how to pronounce.</p>
+
+      <h2>Why Research Can Feel Out of Reach</h2>
+
+      <p>It is no surprise that conducting independent scientific research as a high school student is one of the most beneficial activities you can add to a resume and college application. However, there is no clear guideline or universal list of steps that guarantees a publication or an opportunity that is widely accessible or affordable.</p>
+
+      <p>Many students struggle to find professors to work under for several reasons:</p>
+
+      <ul>
+        <li>They do not live near a college or university with adequate laboratory equipment.</li>
+        <li>They do not know how to cold-email professors effectively.</li>
+        <li>They do not have the time, energy, transportation, or ability to travel to a nearby lab.</li>
+        <li>They are already balancing school, sports, extracurricular activities, family responsibilities, and other commitments.</li>
+      </ul>
+
+      <p>Even though research has proven to be a valuable extracurricular activity, it is not always accessible or straightforward to pursue. In addition, many summer programs and internships have become expensive pay-to-attend opportunities, costing families thousands of dollars while sometimes offering limited research experience or meaningful learning.</p>
+
+      <p>While cost may not be a barrier for every family, expensive programs do not automatically add value to a student’s application. What matters more is rigor, initiative, curiosity, and the skills you build while doing real work.</p>
+
+      <h2>How Project Mars Can Help</h2>
+
+      <p>For these reasons, Project Mars is an organization designed to help students maximize their time at <strong>no cost</strong>. We are a resource for students who are struggling to get started and who want to develop a lifelong skill: discovery.</p>
+
+      <p>This blog aims to educate students on what research is, why they might want to pursue it, and why it matters for reasons beyond college applications. Our goal is to make research more accessible, less intimidating, and easier to begin.</p>
+
+      <p>You do not need to have access to an advanced laboratory, a prestigious internship, or a family connection to a university to start building research skills. You can begin by learning how to ask meaningful questions, read scientific papers, identify gaps in knowledge, organize information, and communicate your ideas clearly.</p>
+
+      <h2>Research Takes Time</h2>
+
+      <p>Students are often told to begin by sending cold emails or applying to highly competitive internships and summer programs. But it can be difficult to access these opportunities without prior experience. Other students may join passive internships that do not actually teach them how to conduct research.</p>
+
+      <p>Learning research skills requires background work, patience, and persistence. No one climbs Mount Everest on their first day. In the same way, your first independent research project—or even your first project completed by following the guides on this blog—may not immediately guarantee you a place at a competitive program such as MIT RSI or SSP.</p>
+
+      <p>What it can do is give you the push you need to pursue more advanced research in the future. It can help you build a resume, establish credibility in the scientific community, and develop the skills that mentors, professors, and programs look for.</p>
+
+      <p>By engaging in research before reaching out to professors, you may be more likely to earn future opportunities. You can build connections through the networking and peer-review process, strengthen your resume, and stand out from students who are also sending cold emails without prior preparation.</p>
+
+      <h2>What You Can Expect</h2>
+
+      <p>As this blog and community continue to grow, Project Mars will provide free resources and templates to help students begin and advance their research journeys.</p>
+
+      <p>These resources will include:</p>
+
+      <ul>
+        <li>Guides for choosing a research topic</li>
+        <li>Cold-email templates for reaching out to professors and mentors</li>
+        <li>Spreadsheets for tracking outreach emails and responses</li>
+        <li>Step-by-step guides for writing research papers</li>
+        <li>Guides for getting published and understanding peer review</li>
+        <li>Networking tips for connecting with mentors and researchers</li>
+        <li>Advice for strengthening your resume and candidacy for awards, scholarships, programs, and future research opportunities</li>
+      </ul>
+
+      <p>Research is not supposed to be reserved for students with the most money, connections, or access to advanced labs. It begins with curiosity, persistence, and the willingness to learn.</p>
+
+      <p><strong>Welcome to the Project Mars Research Blog. We are excited to build, learn, and discover with you.</strong></p>
+
       <div class="author-bio">
         <h3>About the Author</h3>
-        <p> Sarah Verma </p>
-    </div>
+
+        <p>Sarah Verma is the founder of Project Mars, a nonprofit focused on making research education more accessible to students.</p>
+      </div>
     </article>
-  </div>
+  </main>
 
   <!-- Footer -->
   <footer>
@@ -204,10 +373,14 @@
         <div class="footer-section">
           <h4>Project Mars</h4>
           <p>Advancing student research in health and science</p>
-          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+          <p class="footer-team">
+            Founder: Sarah Verma | Director of Content: Anushka Pandey
+          </p>
         </div>
+
         <div class="footer-section">
           <h4>Quick Links</h4>
+
           <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About</a></li>
@@ -215,13 +388,17 @@
             <li><a href="../index.html#contact">Contact</a></li>
           </ul>
         </div>
+
         <div class="footer-section">
           <h4>Contact</h4>
           <p>📧 med.assoc.research.science@gmail.com</p>
           <p>📱 @project_mars09</p>
         </div>
       </div>
-      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+
+      <p class="copyright">
+        &copy; 2026 Project Mars. All rights reserved.
+      </p>
     </div>
   </footer>
 
