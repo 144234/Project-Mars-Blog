@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TITLE  - Project Mars</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Article-specific styles */
+    .article-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    } 
+    
+    .article-content {
+      background: var(--white);
+      padding: 60px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      line-height: 1.8;
+    }
+    
+    .article-content h1 {
+      font-size: 2.8rem;
+      color: var(--darkest-blue);
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 3px solid var(--medium-blue);
+    }
+    
+    .article-content h2 {
+      font-size: 2rem;
+      color: var(--dark-blue);
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .article-content h3 {
+      font-size: 1.5rem;
+      color: var(--darker-blue);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    
+    .article-content p {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 25px;
+      line-height: 1.8;
+    }
+    
+    .article-content ul,
+    .article-content ol {
+      margin: 25px 0;
+      padding-left: 30px;
+    }
+    
+    .article-content li {
+      font-size: 1.1rem;
+      color: var(--darker-blue);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 30px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .article-meta {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--light-blue);
+      flex-wrap: wrap;
+    }
+    
+    .article-meta span {
+      font-size: 0.95rem;
+      color: var(--muted-blue);
+    }
+    
+    .back-button {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: var(--dark-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: 2px solid var(--medium-blue);
+      border-radius: 25px;
+      transition: all 0.3s;
+    }
+    
+    .back-button:hover {
+      background: var(--medium-blue);
+      color: var(--darkest-blue);
+    }
+    
+    .author-bio {
+      background: var(--bg-beige);
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 60px;
+      border-left: 5px solid var(--medium-blue);
+    }
+    
+    .author-bio h3 {
+      color: var(--darkest-blue);
+      margin-bottom: 10px;
+    }
+    
+    .author-bio p {
+      color: var(--darker-blue);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <h2>Project Mars</h2>
+      <button class="close-sidebar" onclick="toggleSidebar()">✕</button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="sidebar-link"> Home</a>
+      <div class="sidebar-section">
+        <h3>Categories</h3>
+        <a href="categories/pediatrics.html" class="sidebar-link"> Pediatrics</a>
+        <a href="categories/oncology.html" class="sidebar-link"> Cancer / Oncology</a>
+        <a href="categories/policy.html" class="sidebar-link"> Public Policy</a>
+        <a href="categories/ai-medicine.html" class="sidebar-link"> AI in Medicine</a>
+        <a href="categories/neuroscience.html" class="sidebar-link"> Neuroscience</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Series</h3>
+        <a href="categories/skills.html" class="sidebar-link"> Research Skills 101</a>
+        <a href="categories/spotlights.html" class="sidebar-link"> Spotlights</a>
+        <a href="categories/breakthroughs.html" class="sidebar-link"> Breakthroughs</a>
+      </div>
+      <div class="sidebar-section">
+        <h3>Organization</h3>
+        <a href="categories/updates.html" class="sidebar-link">📢 Organization Updates</a>
+        <a href="about.html" class="sidebar-link">ℹ️ About Us</a>
+        <a href="index.html#contact" class="sidebar-link">📧 Contact</a>
+      </div>
+      <div class="sidebar-cta">
+        <h3>Join Our Team</h3>
+        <p>Want to write for us?</p>
+        <a href="https://forms.google.com/your-placeholder-form" target="_blank" class="apply-button">Apply to be a Writer →</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar()"></div>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-nav">
+    <div class="container">
+      <button class="menu-toggle" onclick="toggleSidebar()">☰ Menu</button>
+      <div class="logo">
+        <a href="index.html">Project Mars</a>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Article Content -->
+  <div class="article-container">
+    <a href="../categories/_____.html" class="back-button">← Back to _____</a>
+    
+    <article class="article-content">
+      <!-- Article Meta Info -->
+      <div class="article-meta">
+        <span class="category-tag ______">_____</span>
+        <span>📅 September 2026</span>
+        <span>✍️ By Hameedah Salman </span>
+      </div>
+
+      <!-- Article content/html -->
+<h1>Surviving Adolescence with Epilepsy</h1>
+
+<p>For teenagers, high school can feel like the ultimate battleground: surviving classes, friendships, and even romance. Still, in the grand scheme of things, these four years can seem rather straightforward. The beauty of adolescence is often in its simplicity.</p>
+
+<p>What many people take for granted, though, is their health. It is easy to assume that children are capable of doing everything—they are in their prime, after all—but not all illnesses come during old age or as a result of lifestyle choices. Some, like epilepsy, are chronic conditions associated with pediatric onset.</p>
+
+<h2>Epilepsy Explained</h2>
+
+<p>Epilepsy is a chronic neurological disorder characterized by recurrent, unprovoked seizures caused by sudden, abnormal bursts of electrical activity in brain cells. Having one seizure does not necessarily mean that a person has epilepsy, especially if the seizure was triggered by something such as a fever. A trained neurologist evaluates medical history, symptoms, and diagnostic testing to determine whether epilepsy is present.</p>
+
+<p>One important diagnostic tool is an electroencephalogram, commonly called an EEG. An EEG records electrical activity in the brain and may show abnormal electrical discharges that support an epilepsy diagnosis. Some events can look like seizures without involving the brain activity associated with epileptic seizures, which is why professional evaluation matters.</p>
+
+<p>Seizures are not one-size-fits-all. What a seizure looks like depends on where the abnormal electrical activity begins in the brain and how far it spreads. Seizures are commonly classified by their onset, including focal seizures, which begin on one side of the brain, and generalized seizures, which begin on or involve both sides of the brain. [99][100]</p>
+
+<h3>Focal Seizures</h3>
+
+<p>Focal seizures, formerly called partial seizures, begin in a specific area on one side of the brain. Their appearance depends on the area of the brain affected. Two major types are focal aware seizures and focal impaired-awareness seizures. [99][100]</p>
+
+<h4>Focal Aware Seizures</h4>
+
+<p>During a focal aware seizure, the person remains conscious and may be able to remember what happened. Symptoms may include sudden emotional shifts, such as unexplained fear or joy; unusual sensory experiences, such as strange smells, tastes, or tingling; or involuntary twitching in one muscle group, such as an arm or fingers. [101]</p>
+
+<h4>Focal Impaired-Awareness Seizures</h4>
+
+<p>During a focal impaired-awareness seizure, the person’s awareness is altered. They may appear awake but cannot respond normally. These seizures can involve blank staring, confusion, repetitive purposeless movements called automatisms—such as lip-smacking, chewing, hand-rubbing, or wandering—and limited memory of the event afterward. [99][104]</p>
+
+<h3>Generalized Seizures</h3>
+
+<p>Generalized seizures begin on or involve both sides of the brain at the same time. Consciousness is commonly affected, although the appearance and effects of a seizure vary depending on its type. [99][100]</p>
+
+<h4>Absence Seizures</h4>
+
+<p>Absence seizures can appear as brief staring spells, often lasting only a few seconds. A person may suddenly stop speaking or moving, stare forward, and then quickly resume what they were doing without realizing that anything happened. These seizures are common in children and adolescents.</p>
+
+<h4>Tonic-Clonic Seizures</h4>
+
+<p>Tonic-clonic seizures are among the most recognizable seizure types. They may involve a tonic phase, during which muscles stiffen and the person may lose balance and fall, followed by a clonic phase, during which the arms and legs jerk rhythmically.</p>
+
+<p>Afterward, a person may experience the post-ictal phase. This recovery period can include deep exhaustion, confusion, headache, muscle soreness, or sleep as the brain recovers.</p>
+
+<h4>Atonic Seizures</h4>
+
+<p>Atonic seizures, sometimes called “drop attacks,” involve a sudden loss of muscle tone. A person’s head may drop forward, or their entire body may collapse suddenly to the floor. Because falls can happen without warning, these seizures can create a risk of injury.</p>
+
+<h4>Myoclonic Seizures</h4>
+
+<p>Myoclonic seizures involve quick, shock-like muscle jerks or twitches. They often affect the arms or upper body and may last only a fraction of a second.</p>
+
+<h2>The Reality of Daily Treatment</h2>
+
+<p>As a teenager, you are in the awkward stage of wanting independence while still being under the responsibility of parents or caregivers. For teens with epilepsy, this reality can feel especially intense. Epilepsy is a chronic condition that may require daily medication and consistent medical follow-up. Even after months without seizures, changing or stopping medication without medical guidance can increase seizure risk. The American Academy of Pediatrics notes that puberty-related physical changes may also require medication adjustments, which makes ongoing communication with a healthcare team important. [108]</p>
+
+<p>This does not mean teens with epilepsy cannot reclaim autonomy. A critical developmental goal is learning to take ownership of health needs: understanding their specific seizure type, following a medication schedule, recognizing potential triggers, and participating in medical decisions with guidance from parents, caregivers, and clinicians.</p>
+
+<p>In practice, this can include:</p>
+
+<ul>
+  <li>Setting phone alarms for medications</li>
+  <li>Using a daily pill organizer</li>
+  <li>Keeping a seizure and symptom log</li>
+  <li>Tracking sleep patterns to identify potential triggers</li>
+  <li>Learning the details of a personal seizure action plan</li>
+  <li>Knowing when to contact a parent, caregiver, school nurse, or healthcare professional</li>
+</ul>
+
+<p>With all of the changes happening during puberty, understanding one’s body and health needs becomes more important than ever.</p>
+
+<h2>The Mental and Social Toll</h2>
+
+<p>Adolescence is a vulnerable period marked by a growing desire for independence and peer acceptance. Living with a chronic condition like epilepsy can create self-consciousness and fears of public embarrassment, which can negatively affect self-esteem. These concerns do not only apply to teens who experience tonic-clonic seizures. Focal seizures can also involve changes in awareness or behavior that a teenager may not want peers to notice.</p>
+
+<p>Autonomy is especially important during adolescence. Milestones such as driving, dating, playing certain sports, attending overnight events, or staying out late may be restricted or may require additional planning and precautions. The American Academy of Pediatrics notes that activity restrictions can amplify differences from peers and place stress on friendships and dating relationships. Missed sleep and substance use can also raise seizure risk for some teens. [108]</p>
+
+<p>This can create separation between teens with epilepsy and their peers—almost as if every part of life is a reminder that they are “different.” Rather than only managing a medical condition, teens may also need to navigate isolation during a time when they want to fit in.</p>
+
+<p>The fear of embarrassment and reduced independence can build into major psychological challenges. Emotional stress may contribute to fluctuating moods, heightened anxiety, or depression as teens learn to navigate their condition, especially when peer stigma or misunderstanding is involved. For teens living with seizures, adolescence can become an additional challenge in the journey of figuring out who they are.</p>
+
+<h2>Balancing Everyday Life</h2>
+
+<p>Seizure triggers vary widely from person to person, and teens should discuss their individual triggers and safety plan with their medical team. However, there are several factors that may be especially important during adolescence.</p>
+
+<h3>Sleep Deprivation</h3>
+
+<p>A lack of consistent sleep or frequent late nights can be a seizure trigger for some people with epilepsy. Many high school students stay up past midnight doing homework, using social media, or spending time with friends. Chronic sleep deprivation can be harmful on its own, but for some teens with epilepsy, it can become a serious health concern. [108]</p>
+
+<h3>Substance Use</h3>
+
+<p>Alcohol and recreational drug use can carry heightened risks for people with epilepsy. These substances can affect sleep, interact with anti-seizure medications, and potentially increase seizure risk. Teens should talk with their healthcare provider about their specific condition and medications before making decisions that could affect their health. [108]</p>
+
+<h3>Sensory and Emotional Stress</h3>
+
+<p>Stress, overstimulation, and—for some people—photosensitivity can also be connected to seizure risk. Adolescence already comes with academic pressure, social changes, and emotional challenges. When epilepsy is added to that picture, stress can create a difficult cycle that affects both physical and mental well-being.</p>
+
+<h2>Key Ways to Help</h2>
+
+<p>Teens with epilepsy understand their own condition beyond just a definition, so there is no perfect list of actions for every bystander or friend. For focal or absence seizures, calmly staying nearby, helping the person remain safe, and following their seizure action plan may be enough.</p>
+
+<p>For a tonic-clonic seizure, basic seizure first aid can make an important difference:</p>
+
+<ul>
+  <li>Stay calm and remain with the person.</li>
+  <li>Time the seizure if possible.</li>
+  <li>Move sharp or hard objects away from them.</li>
+  <li>If they are on the ground, cushion their head with something soft.</li>
+  <li>Turn them gently onto their side when it is safe to do so, helping keep the airway clear.</li>
+  <li>Loosen tight clothing around the neck.</li>
+  <li>Do not restrain them or try to stop their movements.</li>
+  <li>Do not put anything in their mouth.</li>
+  <li>Stay with them until they are awake, safe, and fully recovering.</li>
+</ul>
+
+<p>Call 911 or seek emergency medical help if the seizure lasts longer than 5 minutes; another seizure begins shortly after the first; the person has trouble breathing or waking up afterward; they are injured; the seizure happens in water; or it is their first known seizure. Individual seizure action plans may also provide specific instructions for emergency medication or when to contact emergency services.</p>
+
+<h2>Beyond the Diagnosis</h2>
+
+<p>Constantly discussing a person’s condition, precautions, and care can make teens with epilepsy feel boxed in by their diagnosis. The truth is that adolescence is a journey for everyone. While epilepsy may make that journey more complicated, it does not change the ultimate goal: figuring out who you are.</p>
+
+<p>Although epilepsy may limit some activities or require extra planning, it can also introduce teens to a new community, help them see life from a different perspective, and teach them to cherish the smaller things. The possibilities of what they can experience are still endless. There are places to travel, people to meet, foods to taste, interests to explore, and goals to pursue.</p>
+
+<p>The point is to allow teens with epilepsy to explore whichever direction their heart desires while maintaining the precautions that help keep them safe.</p>
+
+<h3>A Quick Checklist</h3>
+
+<ul class="checklist">
+  <li>☐ Own your narrative</li>
+  <li>☐ Pursue your passions</li>
+  <li>☐ Step out of your comfort zone—safely</li>
+  <li>☐ Find your people</li>
+  <li>☐ Look toward the future</li>
+</ul>
+
+<h2>References</h2>
+
+<p>American Academy of Pediatrics. (2025, July 14). <em>Managing pediatric epilepsy: Teens and epilepsy</em>. <a href="https://www.aap.org/en/patient-care/epilepsy/managing-pediatric-epilepsy/managing-pediatric-epilepsy-teens-and-epilepsy/" target="_blank" rel="noopener noreferrer">https://www.aap.org/en/patient-care/epilepsy/managing-pediatric-epilepsy/managing-pediatric-epilepsy-teens-and-epilepsy/</a></p>
+
+<p>Centers for Disease Control and Prevention. (2024, August 21). <em>Types of seizures</em>. <a href="https://www.cdc.gov/epilepsy/about/types-of-seizures.html" target="_blank" rel="noopener noreferrer">https://www.cdc.gov/epilepsy/about/types-of-seizures.html</a></p>
+
+<p>Centers for Disease Control and Prevention. (2025, April 1). <em>First aid for seizures</em>. <a href="https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html" target="_blank" rel="noopener noreferrer">https://www.cdc.gov/epilepsy/first-aid-for-seizures/index.html</a></p>
+
+<p>Epilepsy Association. (n.d.). <em>Epilepsy presents painful challenge for youngsters</em>. EpilepsyU. <a href="https://www.epilepsyassociation.com/epilepsyu/epilepsy-presents-painful-challenge-for-youngsters" target="_blank" rel="noopener noreferrer">https://www.epilepsyassociation.com/epilepsyu/epilepsy-presents-painful-challenge-for-youngsters</a></p>
+
+<p>Epilepsy Foundation. (2013, August 27). <em>Teens</em>. <a href="https://www.epilepsy.com/parents-and-caregivers/teens" target="_blank" rel="noopener noreferrer">https://www.epilepsy.com/parents-and-caregivers/teens</a></p>
+
+<p>Epilepsy Foundation. (n.d.). <em>Types of seizures</em>. <a href="https://www.epilepsy.com/what-is-epilepsy/seizure-types" target="_blank" rel="noopener noreferrer">https://www.epilepsy.com/what-is-epilepsy/seizure-types</a></p>
+
+<p>KidsHealth. (2021, July). <em>Epilepsy (for teens)</em> (A. W. Anzilotti, Ed.). Nemours Children’s Health. <a href="https://kidshealth.org/en/teens/epilepsy.html" target="_blank" rel="noopener noreferrer">https://kidshealth.org/en/teens/epilepsy.html</a></p>
+
+    <!-- Optional: Author Bio -->
+      <div class="author-bio">
+        <h3>About the Author</h3>
+        <p> Hameedah Salman leverages her writing to share insights and explore discoveries in her primary fields of interest: neuroscience and public health. She is dedicated to using her communication skills to make scientific information impactful and easy to understand. </p>
+    </div>
+    </article>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Project Mars</h4>
+          <p>Advancing student research in health and science</p>
+          <p class="footer-team">Founder: Sarah Verma | Director of Content: Anushka Pandey</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../index.html#categories">Categories</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📧 med.assoc.research.science@gmail.com</p>
+          <p>📱 @project_mars09</p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Project Mars. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
